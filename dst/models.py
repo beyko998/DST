@@ -58,7 +58,7 @@ class ServiceOrProduct(models.Model):
         return self.name
 
     def get_absolute_url(self):
-        return reverse('product', args=[str(self.slug)])
+        return reverse('name', args=[str(self.slug)])
 
 
 class PdfDescr(models.Model):

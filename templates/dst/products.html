@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="ua">
+<head>
+    <meta charset="UTF-8">
+    <title>Товари та послуги</title>
+</head>
+<body>
+<h1>Товари та послуги</h1>
+{% for item in product %}
+<div>
+    <h2>{{item.connection_between}}</h2>
+    <h3>{{item.name}}</h3>
+    <p>{{item.price}} {{item.currency_rate}}</p>
+    <p>{{item.description}}</p>
+</div>
+<hr>
+{% endfor %}
+</body>
+</html>
